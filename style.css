@@ -1,0 +1,65 @@
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+img {
+    max-width: 50%;;
+}
+
+.game {
+    background-color: crimson;
+    height: 100vh;
+    margin: 0;
+}
+
+.game > h1 {
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.pictures,
+.names {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+}
+
+.pictures {
+    background-color: darkorchid;
+}
+
+.pictures:nth-child(even) {
+    padding-left: .5em;
+    background-color: black;
+}
+
+.names {
+    align-items: flex-end;
+    background-color: dodgerblue;
+}
+
